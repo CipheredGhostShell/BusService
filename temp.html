@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking System</title>
+    <link rel="stylesheet" href="ticket.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Bus Ticket Booking</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <span class="cir_border">&#8801;</span>
+        </div>
+    </nav>
+
+    <div class="background"></div>
+    <div class="container">
+        <h1>Bus Ticket Booking System</h1>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="from">From:</label>
+                <select id="from">
+                    <option value="howrah">Howrah</option>
+                    <option value="saltLake">Salt Lake</option>
+                    <option value="dumDum">Dum Dum</option>
+                    <option value="esplanade">Esplanade</option>
+                    <option value="parkStreet">Park Street</option>
+                    <option value="ballygunge">Ballygunge</option>
+                    <option value="shyambazar">Shyambazar</option>
+                    <option value="kalighat">Kalighat</option>
+                    <option value="garia">Garia</option>
+                    <option value="jadavpur">Jadavpur</option>
+                    <option value="kasba">Kasba</option>
+                    <option value="barasat">Barasat</option>
+                    <option value="sealdah">Sealdah</option>
+                    <option value="chandniChowk">Chandni Chowk</option>
+                    <option value="tollygunge">Tollygunge</option>
+                    <option value="baguiati">Baguiati</option>
+                    <option value="rajarhat">Rajarhat</option>
+                    <option value="newTown">New Town</option>
+                    <option value="kalyani">Kalyani</option>
+                    <option value="dumdumPark">Dum Dum Park</option>
+                    <!-- Options for "From" -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="to">To:</label>
+                <select id="to">
+                    <option value="howrah">Howrah</option>
+                    <option value="saltLake">Salt Lake</option>
+                    <option value="dumDum">Dum Dum</option>
+                    <option value="esplanade">Esplanade</option>
+                    <option value="parkStreet">Park Street</option>
+                    <option value="ballygunge">Ballygunge</option>
+                    <option value="shyambazar">Shyambazar</option>
+                    <option value="kalighat">Kalighat</option>
+                    <option value="garia">Garia</option>
+                    <option value="jadavpur">Jadavpur</option>
+                    <option value="kasba">Kasba</option>
+                    <option value="barasat">Barasat</option>
+                    <option value="sealdah">Sealdah</option>
+                    <option value="chandniChowk">Chandni Chowk</option>
+                    <option value="tollygunge">Tollygunge</option>
+                    <option value="baguiati">Baguiati</option>
+                    <option value="rajarhat">Rajarhat</option>
+                    <option value="newTown">New Town</option>
+                    <option value="kalyani">Kalyani</option>
+                    <option value="dumdumPark">Dum Dum Park</option>
+                    <!-- Options for "To" -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="seats">Select Seats:</label>
+                <div class="seats-container">
+                    <div class="seat" data-seat="1">1</div>
+                    <div class="seat" data-seat="2">2</div>
+                    <div class="seat" data-seat="3">3</div>
+                    <div class="seat" data-seat="4">4</div>
+                    <div class="seat" data-seat="5">5</div>
+                    <div class="seat" data-seat="6">6</div>
+                    <div class="seat" data-seat="7">7</div>
+                    <div class="seat" data-seat="8">8</div>
+                    <div class="seat" data-seat="9">9</div>
+                    <div class="seat" data-seat="10">10</div>
+                    <!-- Seats selection -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <p id="price">0</p>
+            </div>
+            <button type="submit">Book Tickets</button>
+        </form>
+        <div id="confirmation" class="hidden">
+            <h2>Booking Confirmation</h2>
+            <p id="confirmationDetails"></p>
+            <button id="newBooking">New Booking</button>
+        </div>
+    </div>
+    <script src="ticket.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>
